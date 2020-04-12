@@ -6,8 +6,8 @@ class MovieItem extends HTMLElement {
         this.render();
     }
     render() {
-        this.innerHTML = `
-            <div class="movie-card">
+        this.innerHTML = /* html */`
+            <div class="movie-card" data-movieid="${this._item.id}">
                 <div class="img-top">
                     <img src="${imageHalfUrl + this._item.poster_path}">
                 </div>

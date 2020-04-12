@@ -5,7 +5,7 @@ class AppBar extends HTMLElement {
         this.render();
     }
     render() {
-        this.innerHTML = `
+        this.innerHTML = /* html */`
             <nav class="navbar">
                 <div class="container">
                     <div class="brand">
@@ -13,13 +13,8 @@ class AppBar extends HTMLElement {
                     </div>
                     <div class="right-menu">
                         <ul class="navbar-nav">
-                            <li class="nav-item"><a href="">Trending</a></li>
-                            <li class="nav-item"><a href="genres.html">Genres</a></li>
+                            <li class="nav-item"><a href="?type=trending">Trending</a></li>
                         </ul>
-                        <div class="search-box">
-                            <input type="search" id="inputSearch">
-                            <button type="submit" id="btnSearch">Search</button>
-                        </div>
                     </div>
                 </div>
             </nav>
