@@ -7,6 +7,7 @@ import "../components/do-paginate";
 import "../components/footer-bar";
 import "../components/modal-info";
 
+
 const app = () => {
     const movieListElement = document.querySelector("movie-list");
     const mainContainer = document.querySelector("main > .movie-container");
@@ -132,12 +133,10 @@ const app = () => {
         movieList(1);
     }
 
-    // const clickCard = async () => {
     $(".movie-container").on("click", ".movie-card", function () {
         const movieID = $(this).data("movieid");
         movieDetail(movieID);
     });
-    // }
 };
 
 export default app;

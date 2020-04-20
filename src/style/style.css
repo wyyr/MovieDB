@@ -188,6 +188,9 @@ footer-bar {
     .buffer img {
         width: 100%;
     }
+    .modal .movie-info {
+        margin-top: 30px;
+    }
 }
 @media (max-width: 576px) {
     .search-box {

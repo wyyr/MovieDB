@@ -1,6 +1,11 @@
 import "regenerator-runtime";
 import "./style/style.css";
 import app from "./scripts/views/app.js";
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import $ from "jquery";
+
+window.$ = $;
 
 document.addEventListener("DOMContentLoaded", app);
 

@@ -33,6 +33,14 @@ class Movie {
             })
             .catch((e) => Promise.reject(new Error(e)));
     }
+    // static genres(list) {
+    //     return fetch(`${apiUrl}/genre/movie/list?api_key=${apiKey}&language=en-US`)
+    //         .then((res) => res.json())
+    //         .then((data) => {
+    //             return Promise.resolve(data.results);
+    //         })
+    //         .catch((e) => Promise.reject(new Error(e)));;
+    // }
 }
 
 export default Movie;
